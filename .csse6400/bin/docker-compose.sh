@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# Check that the health endpoint is returning 200 using docker-compose
+# Check that the health endpoint is returning 200 using docker compose
 docker compose build
 docker compose up -d
 error=$?
 pid=$!
 if [[ $error -ne 0 ]]; then
-    echo "Failed to run docker-compose up"
+    echo "Failed to run docker compose up"
     exit 1
 fi
 
