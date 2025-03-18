@@ -18,6 +18,7 @@ curl -s -o /dev/null -w "%{http_code}" http://localhost:6400/api/v1/health | gre
 error=$?
 if [[ $error -ne 0 ]]; then
     echo "Failed to get 200 from health endpoint"
+    docker compose down
     exit 1
 fi
 

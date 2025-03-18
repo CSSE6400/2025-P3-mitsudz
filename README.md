@@ -38,3 +38,4 @@ CMD ["pipx", "run", "poetry", "run", "flask", "--app" \
 
 - Use  osascript -e 'quit app "Docker"' && open -a Docker to kill and reload docker.
 
+- use docker exec to go inside of docker container!
